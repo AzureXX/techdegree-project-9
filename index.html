@@ -35,107 +35,128 @@
           </div>
         </div>
           <p class="alert"><span class="alert-is">Alert: </span><span class="alert-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</span><span class="alert-close">x </span></p>
-          <canvas id="" width="400" height="400"></canvas>
-          <canvas id="" width="400" height="400"></canvas>
-          <canvas id="" width="400" height="400"></canvas>
+          <canvas id="traffic-chart" width="100" height="25"></canvas>
+          <div class="chart">
+            <canvas id="daily-traffic" width="100" height="25"></canvas>
+          </div>
+          <div class="chart">
+            <canvas id="mobile-users" width="100" height="25"></canvas>
+          </div>
+        <div class="sn-block">
+          <div class="sn-widget">
+            <img class="sn-icon" src="icons/icon-twitter.svg">
+            <div class="sn-text">
+              <p>Twitter</p>
+              <p>10,345</p>
+            </div>
+          </div>
+          <div class="sn-widget">
+            <img class="sn-icon" src="icons/icon-facebook.svg">
+            <div class="sn-text">
+              <p>Facebook</p>
+              <p>8,739</p>
+            </div>
+          </div>
+          <div class="sn-widget">
+            <img class="sn-icon" src="icons/icon-google-plus.svg">
+            <div class="sn-text">
+              <p>Google+</p>
+              <p>2,530</p>
+            </div>
+          </div>
+        </div>
+        <div class="widgets-sc">
+          <div class="widget">
+            <h3>NEW MEMBERS</h3>
+            <div class="new-member">
+              <img src="images/1.jpg" alt="user photo">
+              <p>Victoria Chambers</p>
+              <p>victoriac.chambers@example.com</p>
+              <p>10/15/15</p>
+            </div>
+            <div class="new-member">
+              <img src="images/2.jpg" alt="user photo">
+              <p>Victoria Chambers</p>
+              <p>victoriac.chambers@example.com</p>
+              <p>10/15/15</p>
+            </div>
+            <div class="new-member">
+              <img src="images/3.jpg" alt="user photo">
+              <p>Victoria Chambers</p>
+              <p>victoriac.chambers@example.com</p>
+              <p>10/15/15</p>
+            </div>
+            <div class="new-member">
+              <img src="images/4.jpg" alt="user photo">
+              <p>Victoria Chambers</p>
+              <p>victoriac.chambers@example.com</p>
+              <p>10/15/15</p>
+            </div>
+          </div>
+          <div class="widget">
+            <h3>RECENT ACTIVITY</h3>
+            <div class="recent-activity">
+              <img src="images/4.jpg" alt="user photo">
+              <p>Victoria Chambers commented on AzuriaApp's SEO Tips</p>
+              <p>5 hours ago</p>
+            </div>
+            <div class="recent-activity">
+              <img src="images/4.jpg" alt="user photo">
+              <p>Victoria Chambers commented on AzuriaApp's SEO Tips</p>
+              <p>5 hours ago</p>
+            </div>
+            <div class="recent-activity">
+              <img src="images/4.jpg" alt="user photo">
+              <p>Victoria Chambers commented on AzuriaApp's SEO Tips</p>
+              <p>5 hours ago</p>
+            </div>
+            <div class="recent-activity">
+              <img src="images/4.jpg" alt="user photo">
+              <p>Victoria Chambers commented on AzuriaApp's SEO Tips</p>
+              <p>5 hours ago</p>
+            </div>
+          </div>
 
-        <div class="sn-widget">
-          <img class="sn-icon" src="icons/icon-twitter.svg">
-          <div class="sn-text">
-            <p>Twitter</p>
-            <p>10,345</p>
+          <div class="widget">
+            <h3>MESSAGE USER</h3>
+            <form>
+              <input class="user-search" type="search" name="widget-search" placeholder="Search for User"><br><br>
+              <textarea name="widget-text" placeholder="Message for user" rows="10"></textarea><br>
+              <button>Send</button>
+            </form>
+          </div>
+          <div class="widget">
+            <h3>SETTINGS</h3>
+            <form>
+              <p>Send Email Notifications</p>
+              <div class="container">
+                <div class="onoffswitch">
+                    <input type="checkbox" name="emailnotification" class="onoffswitch-checkbox" id="emailnotification" checked>
+                    <label class="onoffswitch-label" for="emailnotification">
+                        <div class="onoffswitch-inner"></div>
+                        <div class="onoffswitch-switch"></div>
+                    </label>
+                </div>
+              </div><br>
+              <p>Set Profile to Public</p>
+              <div class="container">
+                <div class="onoffswitch">
+                    <input type="checkbox" name="publicprofile" class="onoffswitch-checkbox" id="publicprofile" checked>
+                    <label class="onoffswitch-label" for="publicprofile">
+                        <div class="onoffswitch-inner"></div>
+                        <div class="onoffswitch-switch"></div>
+                    </label>
+                </div>
+              </div><br>
+              <select>
+                <option value="" disabled default>Select TImezone</option>
+              </select><br>
+              <button>Save</button>
+              <button>Cancel</button>
+            </form>
           </div>
         </div>
-        <div class="sn-widget">
-          <img class="sn-icon" src="icons/icon-facebook.svg">
-          <div class="sn-text">
-            <p>Facebook</p>
-            <p>8,739</p>
-          </div>
-        </div>
-        <div class="sn-widget">
-          <img class="sn-icon" src="icons/icon-google-plus.svg">
-          <div class="sn-text">
-            <p>Google+</p>
-            <p>2,530</p>
-          </div>
-        </div>
-        <div class="widget">
-          <h3>NEW MEMBERS</h3>
-          <div class="new-member">
-            <img src="images/1.jpg" alt="user photo">
-            <p>Victoria Chambers</p>
-            <p>victoriac.chambers@example.com</p>
-            <p>10/15/15</p>
-          </div>
-          <div class="new-member">
-            <img src="images/2.jpg" alt="user photo">
-            <p>Victoria Chambers</p>
-            <p>victoriac.chambers@example.com</p>
-            <p>10/15/15</p>
-          </div>
-          <div class="new-member">
-            <img src="images/3.jpg" alt="user photo">
-            <p>Victoria Chambers</p>
-            <p>victoriac.chambers@example.com</p>
-            <p>10/15/15</p>
-          </div>
-          <div class="new-member">
-            <img src="images/4.jpg" alt="user photo">
-            <p>Victoria Chambers</p>
-            <p>victoriac.chambers@example.com</p>
-            <p>10/15/15</p>
-          </div>
-        </div>
-        <div class="widget">
-          <h3>RECENT ACTIVITY</h3>
-          <div class="recent-activity">
-            <img src="images/4.jpg" alt="user photo">
-            <p>Victoria Chambers commented on AzuriaApp's SEO Tips</p>
-            <p>5 hours ago</p>
-          </div>
-          <div class="recent-activity">
-            <img src="images/4.jpg" alt="user photo">
-            <p>Victoria Chambers commented on AzuriaApp's SEO Tips</p>
-            <p>5 hours ago</p>
-          </div>
-          <div class="recent-activity">
-            <img src="images/4.jpg" alt="user photo">
-            <p>Victoria Chambers commented on AzuriaApp's SEO Tips</p>
-            <p>5 hours ago</p>
-          </div>
-          <div class="recent-activity">
-            <img src="images/4.jpg" alt="user photo">
-            <p>Victoria Chambers commented on AzuriaApp's SEO Tips</p>
-            <p>5 hours ago</p>
-          </div>
-        </div>
-        <div class="widget">
-          <h3>MESSAGE USER</h3>
-          <form>
-            <input type="search" name="widget-search" placeholder="Search for User"><br>
-            <textarea name="widget-text" placeholder="Message for user" rows="10" cols="60"></textarea>
-            <button>Send</button>
-          </form>
-        </div>
-        <div class="widget">
-          <h3>SETTINGS</h3>
-          <form>
-            <label for="email-notif">Send Email Notifications</label>
-            <input type="radio" name="email-notif">
-            <input type="radio" name="email-notif">
 
-            <label for="profile-public">Set Profile to Public</label>
-            <input type="radio" name="profile-public">
-            <input type="radio" name="profile-public">
-            <select>
-              <option value="" disabled default>Select TImezone</option>
-            </select>
-            <button>Save</button>
-            <button>Cancel</button>
-          </form>
-        </div>
-      </div>
     </main>
 
     <footer>

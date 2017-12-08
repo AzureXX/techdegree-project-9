@@ -417,6 +417,7 @@ header p {
 
 header h1 {
   color: white;
+  font-size: 1.25em;
   margin: 0;
   font-weight: normal;
   margin-right: auto; }

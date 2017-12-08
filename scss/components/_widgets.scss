@@ -1,0 +1,43 @@
+.widget {
+  display: inline-block;
+  width: 49%;
+  border: 1px solid black;
+}
+
+form {
+  display: inline-block;
+}
+form p {
+  display: inline-block;
+  width: 200px;
+  line-height: 2em;
+}
+.new-member img,
+.recent-activity img {
+  width:2em;
+  border-radius: 50%;
+  display: inline-block;
+}
+.new-member p,
+.recent-activity p {
+  display: inline-block;
+}
+
+.widget form {
+  width:100%;
+}
+.user-search,
+.widget textarea {
+  width: 90%;
+  margin: 3px 5% 0;
+}
+
+.widgets-sc {
+  width: 100%;
+  display:inline-block ;
+}
+
+.widget {
+  display: inline-block;
+  width: 49%;
+}

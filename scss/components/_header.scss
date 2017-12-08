@@ -1,0 +1,39 @@
+
+
+header {
+  display: inline-flex;
+  padding: 0.5em;
+  background-color: purple;
+  width: 100%;
+}
+
+.avatar {
+  width: 2em;
+  height:2em;
+  border-radius: 50%;
+  margin-left: 1em;
+  margin-right: 0.5em;
+}
+
+
+header p {
+  font-size: 1em;
+  line-height: 2em;
+  padding: auto;
+}
+
+header h1{
+  color: white;
+  margin:0;
+  font-weight: normal;
+  margin-right: auto;
+}
+
+.bell {
+  border-right: 1px solid;
+  width: 2em;
+  height:2em;
+  margin-left: 1em;
+  margin-right: 0.5em;
+  padding-right: 0.5em;
+}

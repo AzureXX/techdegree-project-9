@@ -1,0 +1,21 @@
+.alert {
+  display: block;
+  width:95%;
+  margin: 0.75em auto;
+  background-color: purple;
+  color: white;
+  padding: 4px 0;
+
+}
+
+.alert-is {
+  font-weight: bolder;
+  margin-left: 1em;
+}
+
+.alert-close {
+  display: inline-block;
+  float: right;
+  margin-left: auto;
+  width: 2em;
+}

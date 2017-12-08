@@ -6,14 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header>
       <h1><b>Azuria</b>App<sup>TM</sup></h1>
-
-      <img src="icons/icon-bell.svg" alt="bell icon">
-      <img src="images/avatar.jpg" alt="profile picture">
+      <img class="bell" src="icons/icon-bell.svg" alt="bell icon">
+      <img class="avatar" src="images/avatar.jpg" alt="profile picture">
       <p>Ismat Valiyev</p>
     </header>
 
@@ -27,21 +26,27 @@
         </ul>
       </nav>
       <div class="main-container">
-
         <div class="dashboard-line">
           <h2>Dashboard</h2>
           <div class="dashboard-line-in">
             <input type="search" name="main-search" placeholder="Search">
           </div>
         </div>
+
+
           <p class="alert"><span class="alert-is">Alert: </span><span class="alert-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</span><span class="alert-close">x </span></p>
-          <canvas id="traffic-chart" width="100" height="25"></canvas>
-          <div class="chart">
+
+          <div class="chart-1">
+            <canvas id="traffic-chart" width="100" height="25"></canvas>
+          </div>
+          <div class="chart-2">
             <canvas id="daily-traffic" width="100" height="25"></canvas>
           </div>
-          <div class="chart">
+          <div class="chart-3">
             <canvas id="mobile-users" width="100" height="25"></canvas>
           </div>
+
+
         <div class="sn-block">
           <div class="sn-widget">
             <img class="sn-icon" src="icons/icon-twitter.svg">
@@ -65,6 +70,9 @@
             </div>
           </div>
         </div>
+
+
+
         <div class="widgets-sc">
           <div class="widget">
             <h3>NEW MEMBERS</h3>
@@ -129,7 +137,7 @@
             <h3>SETTINGS</h3>
             <form>
               <p>Send Email Notifications</p>
-              <div class="container">
+              <div class="switch-container">
                 <div class="onoffswitch">
                     <input type="checkbox" name="emailnotification" class="onoffswitch-checkbox" id="emailnotification" checked>
                     <label class="onoffswitch-label" for="emailnotification">
@@ -139,7 +147,7 @@
                 </div>
               </div><br>
               <p>Set Profile to Public</p>
-              <div class="container">
+              <div class="switch-container">
                 <div class="onoffswitch">
                     <input type="checkbox" name="publicprofile" class="onoffswitch-checkbox" id="publicprofile" checked>
                     <label class="onoffswitch-label" for="publicprofile">

@@ -1,0 +1,24 @@
+.sn-block {
+  display: inline-flex;
+  width:100%;
+  margin-bottom: 1em;
+}
+
+.sn-widget {
+  border: grey solid 1px;
+  border-radius: 5px;
+  display: inline-block;
+  width: 30%;
+  margin: auto;
+}
+
+.sn-icon {
+  background-color: blue;
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+}
+
+.sn-text {
+  display: inline-block;
+}

@@ -10,14 +10,132 @@
   </head>
   <body>
     <header>
-      <h1>Dashboard</h1>
-      <img src="icons/icon-bell.svg" alt="bell icon" width="10" height="10">
+      <h1><b>Azuria</b>App<sup>TM</sup></h1>
+
+      <img src="icons/icon-bell.svg" alt="bell icon">
       <img src="images/avatar.jpg" alt="profile picture">
       <p>Ismat Valiyev</p>
     </header>
 
     <main>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#"><img src="icons/icon-dashboard.svg" alt="dashboard"></a></li>
+          <li><a href="#"><img src="icons/icon-members.svg" alt="members"></a></li>
+          <li><a href="#"><img src="icons/icon-settings.svg" alt="settings"></a></li>
+          <li><a href="#"><img src="icons/icon-visits.svg" alt="visits"></a></li>
+        </ul>
+      </nav>
+      <div class="main-container">
 
+        <div class="dashboard-line">
+          <h2>Dashboard</h2>
+          <div class="dashboard-line-in">
+            <input type="search" name="main-search" placeholder="Search">
+          </div>
+        </div>
+          <p class="alert"><span class="alert-is">Alert: </span><span class="alert-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</span><span class="alert-close">x </span></p>
+          <canvas id="" width="400" height="400"></canvas>
+          <canvas id="" width="400" height="400"></canvas>
+          <canvas id="" width="400" height="400"></canvas>
+
+        <div class="sn-widget">
+          <img class="sn-icon" src="icons/icon-twitter.svg">
+          <div class="sn-text">
+            <p>Twitter</p>
+            <p>10,345</p>
+          </div>
+        </div>
+        <div class="sn-widget">
+          <img class="sn-icon" src="icons/icon-facebook.svg">
+          <div class="sn-text">
+            <p>Facebook</p>
+            <p>8,739</p>
+          </div>
+        </div>
+        <div class="sn-widget">
+          <img class="sn-icon" src="icons/icon-google-plus.svg">
+          <div class="sn-text">
+            <p>Google+</p>
+            <p>2,530</p>
+          </div>
+        </div>
+        <div class="widget">
+          <h3>NEW MEMBERS</h3>
+          <div class="new-member">
+            <img src="images/1.jpg" alt="user photo">
+            <p>Victoria Chambers</p>
+            <p>victoriac.chambers@example.com</p>
+            <p>10/15/15</p>
+          </div>
+          <div class="new-member">
+            <img src="images/2.jpg" alt="user photo">
+            <p>Victoria Chambers</p>
+            <p>victoriac.chambers@example.com</p>
+            <p>10/15/15</p>
+          </div>
+          <div class="new-member">
+            <img src="images/3.jpg" alt="user photo">
+            <p>Victoria Chambers</p>
+            <p>victoriac.chambers@example.com</p>
+            <p>10/15/15</p>
+          </div>
+          <div class="new-member">
+            <img src="images/4.jpg" alt="user photo">
+            <p>Victoria Chambers</p>
+            <p>victoriac.chambers@example.com</p>
+            <p>10/15/15</p>
+          </div>
+        </div>
+        <div class="widget">
+          <h3>RECENT ACTIVITY</h3>
+          <div class="recent-activity">
+            <img src="images/4.jpg" alt="user photo">
+            <p>Victoria Chambers commented on AzuriaApp's SEO Tips</p>
+            <p>5 hours ago</p>
+          </div>
+          <div class="recent-activity">
+            <img src="images/4.jpg" alt="user photo">
+            <p>Victoria Chambers commented on AzuriaApp's SEO Tips</p>
+            <p>5 hours ago</p>
+          </div>
+          <div class="recent-activity">
+            <img src="images/4.jpg" alt="user photo">
+            <p>Victoria Chambers commented on AzuriaApp's SEO Tips</p>
+            <p>5 hours ago</p>
+          </div>
+          <div class="recent-activity">
+            <img src="images/4.jpg" alt="user photo">
+            <p>Victoria Chambers commented on AzuriaApp's SEO Tips</p>
+            <p>5 hours ago</p>
+          </div>
+        </div>
+        <div class="widget">
+          <h3>MESSAGE USER</h3>
+          <form>
+            <input type="search" name="widget-search" placeholder="Search for User"><br>
+            <textarea name="widget-text" placeholder="Message for user" rows="10" cols="60"></textarea>
+            <button>Send</button>
+          </form>
+        </div>
+        <div class="widget">
+          <h3>SETTINGS</h3>
+          <form>
+            <label for="email-notif">Send Email Notifications</label>
+            <input type="radio" name="email-notif">
+            <input type="radio" name="email-notif">
+
+            <label for="profile-public">Set Profile to Public</label>
+            <input type="radio" name="profile-public">
+            <input type="radio" name="profile-public">
+            <select>
+              <option value="" disabled default>Select TImezone</option>
+            </select>
+            <button>Save</button>
+            <button>Cancel</button>
+          </form>
+        </div>
+      </div>
     </main>
 
     <footer>

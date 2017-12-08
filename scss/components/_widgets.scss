@@ -12,6 +12,12 @@ form p {
   width: 200px;
   line-height: 2em;
 }
+
+.new-member,
+.recent-activity {
+  border-bottom: 1px solid gray;
+}
+
 .new-member img,
 .recent-activity img {
   width:2em;
@@ -34,10 +40,38 @@ form p {
 
 .widgets-sc {
   width: 100%;
-  display:inline-block ;
+  display:inline-flex;
+  flex-flow: row wrap;
 }
 
 .widget {
+  width: 50%;
+  vertical-align: top;
+}
+
+
+.select {
+  display: block;
+  width:90%;
+  margin:0.5em auto;
+}
+.send {
+  display: block;
+  width: 90%;
+  background-color: #7476BA;
+  margin: 0.5em auto;
+}
+
+.save {
   display: inline-block;
-  width: 49%;
+  width: 40%;
+  margin:0.5em 4.85%;
+  background-color: #7476BA;
+}
+
+.cancel {
+  display: inline-block;
+  width: 40%;
+  margin:1em 4.85%;
+  background-color: #B1B1B1;
 }

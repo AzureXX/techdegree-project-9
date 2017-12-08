@@ -394,18 +394,18 @@ template {
   margin: 0;
   padding: 0; }
 
+ul {
+  list-style: none; }
+
+main {
+  display: inline-flex;
+  flex-flow: row wrap; }
+
 header {
   display: inline-flex;
   padding: 0.5em;
-  background-color: purple;
+  background-color: #7577BA;
   width: 100%; }
-
-.avatar {
-  width: 2em;
-  height: 2em;
-  border-radius: 50%;
-  margin-left: 1em;
-  margin-right: 0.5em; }
 
 header p {
   font-size: 1em;
@@ -418,19 +418,29 @@ header h1 {
   font-weight: normal;
   margin-right: auto; }
 
+.avatar,
 .bell {
-  border-right: 1px solid;
   width: 2em;
   height: 2em;
   margin-left: 1em;
-  margin-right: 0.5em;
+  margin-right: 0.5em; }
+
+.bell {
+  border-right: 1px solid;
   padding-right: 0.5em; }
+
+.avatar {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin-left: 1em;
+  margin-right: 0.5em; }
 
 .alert {
   display: block;
   width: 95%;
   margin: 0.75em auto;
-  background-color: purple;
+  background-color: #7476BA;
   color: white;
   padding: 4px 0; }
 
@@ -444,9 +454,6 @@ header h1 {
   margin-left: auto;
   width: 2em; }
 
-ul {
-  list-style: none; }
-
 nav ul li {
   margin: 1em -2px; }
 
@@ -454,13 +461,12 @@ nav ul li {
   display: inline-block;
   width: 64px;
   padding: 16px;
-  min-height: 1000px;
   vertical-align: top;
-  background-color: grey; }
+  background-color: #4C4C6F; }
 
 .main-container {
   width: calc(100% - 64px);
-  background-color: lightyellow;
+  background-color: #FFF;
   margin-left: -4px;
   display: inline-block; }
 
@@ -472,7 +478,7 @@ nav ul li {
 .dashboard-line h2 {
   margin: 0 auto 0 0;
   padding: 4px 1em;
-  width: 10%;
+  width: 15%;
   background-color: white; }
 
 .dashboard-line-in {
@@ -503,18 +509,27 @@ nav ul li {
 .sn-widget {
   border: grey solid 1px;
   border-radius: 5px;
-  display: inline-block;
   width: 30%;
-  margin: auto; }
+  margin: auto;
+  display: inline-flex;
+  background-color: #FBFBFB; }
 
 .sn-icon {
-  background-color: blue;
+  background-color: #7476BA;
   border-radius: 50%;
-  padding: 10px;
+  margin: 1em;
+  padding: 15px;
   display: inline-block; }
 
 .sn-text {
-  display: inline-block; }
+  display: inline-block;
+  margin: auto; }
+
+.sn-name {
+  color: #7476BA; }
+
+.sn-num {
+  font-size: 3em; }
 
 .widget {
   display: inline-block;
@@ -528,6 +543,10 @@ form p {
   display: inline-block;
   width: 200px;
   line-height: 2em; }
+
+.new-member,
+.recent-activity {
+  border-bottom: 1px solid gray; }
 
 .new-member img,
 .recent-activity img {
@@ -549,11 +568,35 @@ form p {
 
 .widgets-sc {
   width: 100%;
-  display: inline-block; }
+  display: inline-flex;
+  flex-flow: row wrap; }
 
 .widget {
+  width: 50%;
+  vertical-align: top; }
+
+.select {
+  display: block;
+  width: 90%;
+  margin: 0.5em auto; }
+
+.send {
+  display: block;
+  width: 90%;
+  background-color: #7476BA;
+  margin: 0.5em auto; }
+
+.save {
   display: inline-block;
-  width: 49%; }
+  width: 40%;
+  margin: 0.5em 4.85%;
+  background-color: #7476BA; }
+
+.cancel {
+  display: inline-block;
+  width: 40%;
+  margin: 1em 4.85%;
+  background-color: #B1B1B1; }
 
 .switch-container {
   display: inline-block; }
@@ -600,7 +643,7 @@ form p {
 .onoffswitch-inner:before {
   content: "ON";
   padding-left: 11px;
-  background-color: #00A600;
+  background-color: #7476BA;
   color: #FFFFFF; }
 
 .onoffswitch-inner:after {

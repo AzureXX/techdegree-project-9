@@ -3,17 +3,11 @@
 header {
   display: inline-flex;
   padding: 0.5em;
-  background-color: purple;
+  background-color: #7577BA;
   width: 100%;
 }
 
-.avatar {
-  width: 2em;
-  height:2em;
-  border-radius: 50%;
-  margin-left: 1em;
-  margin-right: 0.5em;
-}
+
 
 
 header p {
@@ -29,11 +23,23 @@ header h1{
   margin-right: auto;
 }
 
+.avatar,
 .bell {
-  border-right: 1px solid;
   width: 2em;
   height:2em;
   margin-left: 1em;
   margin-right: 0.5em;
+}
+
+.bell {
+  border-right: 1px solid;
   padding-right: 0.5em;
+}
+
+.avatar {
+  width: 2em;
+  height:2em;
+  border-radius: 50%;
+  margin-left: 1em;
+  margin-right: 0.5em;
 }

@@ -1,13 +1,14 @@
 .sn-block {
   display: inline-flex;
-  width:100%;
-  margin-bottom: 1em;
+  flex-flow: row wrap;
+  width: 100%;
+  margin: 1em auto;
 }
 
 .sn-widget {
   border: grey solid 1px;
   border-radius: 5px;
-  width: 30%;
+  width: 100%;
   margin: auto;
   display: inline-flex;
   background-color: #FBFBFB;

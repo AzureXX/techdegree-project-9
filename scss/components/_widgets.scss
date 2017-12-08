@@ -34,7 +34,7 @@ form p {
 }
 .user-search,
 .widget textarea {
-  width: 90%;
+  width: 100%;
   margin: 3px 5% 0;
 }
 
@@ -45,8 +45,8 @@ form p {
 }
 
 .widget {
-  width: 50%;
-  vertical-align: top;
+  width: 100%;
+
 }
 
 
@@ -63,15 +63,15 @@ form p {
 }
 
 .save {
-  display: inline-block;
-  width: 40%;
-  margin:0.5em 4.85%;
+  display: block;
+  width: 90%;
+  margin: 0.5em auto;
   background-color: #7476BA;
 }
 
 .cancel {
-  display: inline-block;
-  width: 40%;
-  margin:1em 4.85%;
+  display: block;
+  width: 90%;
+  margin: 0.5em auto;
   background-color: #B1B1B1;
 }

@@ -10,7 +10,10 @@
   <body>
     <header>
       <h1><b>Azuria</b>App<sup>TM</sup></h1>
-      <img class="bell" src="icons/icon-bell.svg" alt="bell icon">
+      <div>
+        <div class="bell-dot"></div>
+        <img class="bell" src="icons/icon-bell.svg" alt="bell icon">
+      </div>
       <div class="profileinfo">
         <img class="avatar" src="images/avatar.jpg" alt="profile picture">
         <p>Ismat Valiyev</p>
@@ -40,10 +43,10 @@
           <div class="chart-1">
             <h2>Traffic</h2>
             <div class="chart-buttons">
-              <button class="chart-button">Hourly</button>
-              <button class="chart-button">Daily</button>
-              <button class="chart-button">Weekly</button>
               <button class="chart-button">Monthly</button>
+              <button class="chart-button">Weekly</button>
+              <button class="chart-button">Daily</button>
+              <button class="chart-button">Hourly</button>
             </div>
             <canvas id="traffic-chart" width="320" height="200"></canvas>
           </div>

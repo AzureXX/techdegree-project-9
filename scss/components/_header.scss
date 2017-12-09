@@ -32,6 +32,17 @@ header h1{
 .bell {
   padding-right: 0.5em;
 }
+
+.bell-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #9ADB88;
+  position: relative;
+  left: 32px;
+  top: 3px;
+}
+
 .profileinfo {
   border-left: 1px solid #000;
   display: flex;

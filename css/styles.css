@@ -434,6 +434,15 @@ header h1 {
 .bell {
   padding-right: 0.5em; }
 
+.bell-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #9ADB88;
+  position: relative;
+  left: 32px;
+  top: 3px; }
+
 .profileinfo {
   border-left: 1px solid #000;
   display: flex; }
@@ -518,14 +527,14 @@ nav ul li {
   margin: auto; }
 
 .chart-buttons {
-  width: 100%;
-  margin: auto;
+  width: 85%;
+  margin-left: auto;
   display: inline-flex;
-  flex-flow: row wrap; }
+  flex-flow: row-reverse wrap; }
 
 .chart-button {
-  width: 20%;
-  margin: auto;
+  width: 23%;
+  margin: 1px;
   font-size: 0.8em; }
 
 .chart-button:hover {
@@ -534,10 +543,17 @@ nav ul li {
 .chart-button:active {
   background-color: #91C794; }
 
+@media (min-width: 768px) {
+  .chart-button {
+    width: 15%;
+    margin: 1.25em; } }
 @media (min-width: 1024px) {
   .chart-2,
   .chart-3 {
-    width: 50%; } }
+    width: 50%; }
+
+  .chart-button {
+    width: 10%; } }
 .sn-block {
   display: inline-flex;
   flex-flow: row wrap;
@@ -641,7 +657,8 @@ form p {
   display: block;
   width: 100%;
   margin: 0.5em auto;
-  border: 1px solid black; }
+  border: 1px solid black;
+  color: lightgrey; }
 
 .send {
   display: block;

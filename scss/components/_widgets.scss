@@ -1,41 +1,22 @@
-.widget {
-  display: inline-block;
-  width: 49%;
-  border: 1px solid black;
-}
-
-form {
-  display: inline-block;
-}
-form p {
-  display: inline-block;
-  width: 200px;
-  line-height: 2em;
-}
-
 .new-member,
 .recent-activity {
   border-bottom: 1px solid gray;
+  display: flex;
+  flex-flow:row wrap;
 }
 
 .new-member img,
 .recent-activity img {
-  width:2em;
+  width: 9%;
+  height: 9%;
   border-radius: 50%;
-  display: inline-block;
-}
-.new-member p,
-.recent-activity p {
-  display: inline-block;
+  margin: auto 0;
 }
 
 .widget form {
   width:100%;
 }
-.user-search,
-.widget textarea {
-  width: 100%;
-}
+
 
 .widgets-sc {
   width: 100%;
@@ -45,32 +26,88 @@ form p {
 
 .widget {
   width: 100%;
+  padding: 8px;
+  border: 1px solid black;
+}
 
+.ra-main,
+.nm-main {
+  margin: auto 2px;
+  width: 80%;
 }
 
 
-.select {
+.gt,
+.date {
+  margin: auto;
+}
+
+.gt,
+.email {
+  color: #7476BA;
+}
+.date {
+  color:#B1B1B1;
+}
+
+form {
+  display: inline-flex;
+  flex-flow: row wrap;
+}
+form p {
+  display: inline-block;
+  width: 60%;
+  line-height: 2em;
+}
+
+.user-search,
+.user-message {
+  margin: auto;
+  width: 100%;
+  border: 1px solid grey;
+}
+.center {
   display: block;
   width:90%;
+  margin: auto;
+}
+.select {
+  display: block;
+  width:100%;
   margin:0.5em auto;
+  border: 1px solid black;
 }
 .send {
   display: block;
-  width: 90%;
+  width: 100%;
   background-color: #7476BA;
-  margin: 0.5em auto;
+  margin: 1em auto;
 }
 
 .save {
   display: block;
-  width: 90%;
+  width: 100%;
   margin: 0.5em auto;
   background-color: #7476BA;
 }
 
 .cancel {
   display: block;
-  width: 90%;
+  width: 100%;
   margin: 0.5em auto;
   background-color: #B1B1B1;
+}
+
+@media (min-width:768px) {
+  .widget {
+    width: 50%;
+  }
+
+  .save,
+  .cancel {
+    width: 40%;
+
+  }
+
+
 }

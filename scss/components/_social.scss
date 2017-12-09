@@ -1,7 +1,7 @@
 .sn-block {
   display: inline-flex;
   flex-flow: row wrap;
-  width: 100%;
+  width: 90%;
   margin: 1em auto;
 }
 
@@ -9,11 +9,13 @@
   border: grey solid 1px;
   border-radius: 5px;
   width: 100%;
-  margin: auto;
+  margin: 0.5em auto;
   display: inline-flex;
   background-color: #FBFBFB;
 }
-
+.sn-block h2 {
+  width: 100%;
+}
 .sn-icon {
   background-color: #7476BA;
   border-radius: 50%;
@@ -32,5 +34,13 @@
 }
 
 .sn-num {
-  font-size: 3em;
+  font-size: 2em;
+}
+
+
+@media (min-width: 768px) {
+
+    .sn-widget {
+      width: 33%;
+    }
 }

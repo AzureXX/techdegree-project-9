@@ -4,18 +4,25 @@
   margin: 0.75em auto;
   background-color: #7476BA;
   color: white;
-  padding: 4px 0;
-
+  padding: 1em;
 }
 
 .alert-is {
   font-weight: bolder;
-  margin-left: 1em;
+  margin: 1em;
 }
 
 .alert-close {
+  text-align: center;
+  font-size: 1em;
   display: inline-block;
-  float: right;
-  margin-left: auto;
-  width: 2em;
+  width: 100%;
+}
+
+
+@media (min-width: 768px) {
+  .alert-close {
+    float: right;
+    width: 2em;
+  }
 }

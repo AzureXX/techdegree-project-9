@@ -1,3 +1,5 @@
+
+
 .chart-1 {
   width: 100%;
   margin:auto;
@@ -5,6 +7,19 @@
   flex-flow: row wrap;
 }
 
+#tc-hourly,
+#tc-daily,
+#tc-weekly,
+#tc-monthly {
+  width: 100%;
+}
+
+
+#tc-hourly,
+#tc-daily,
+#tc-monthly {
+  display:none;
+}
 .chart-2,
 .chart-3 {
   width: 100%;

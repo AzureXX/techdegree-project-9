@@ -34,21 +34,33 @@
           <h2>Dashboard</h2>
           <div class="dashboard-line-in">
             <input type="search" name="main-search" placeholder="Search">
+            <span id="magnifier">&#128269;</span>
           </div>
         </div>
 
 
-          <p class="alert"><span class="alert-is">Alert: </span><span class="alert-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</span><span class="alert-close">x </span></p>
+          <p class="alert" ><span class="alert-is">Alert: </span><span class="alert-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</span><span class="alert-close">x </span></p>
 
           <div class="chart-1">
             <h2>Traffic</h2>
             <div class="chart-buttons">
-              <button class="chart-button">Monthly</button>
-              <button class="chart-button">Weekly</button>
-              <button class="chart-button">Daily</button>
-              <button class="chart-button">Hourly</button>
+              <button class="chart-button" id="monthly">Monthly</button>
+              <button class="chart-button" id="weekly">Weekly</button>
+              <button class="chart-button" id="daily">Daily</button>
+              <button class="chart-button" id="hourly">Hourly</button>
             </div>
-            <canvas id="traffic-chart" width="320" height="200"></canvas>
+            <div id="tc-hourly">
+              <canvas id="traffic-chart-hourly" width="320" height="200"></canvas>
+            </div>
+            <div id="tc-daily">
+              <canvas id="traffic-chart-daily" width="320" height="200"></canvas>
+            </div>
+            <div id="tc-weekly">
+              <canvas id="traffic-chart-weekly" width="320" height="200"></canvas>
+            </div>
+            <div id="tc-monthly">
+              <canvas id="traffic-chart-monthly" width="320" height="200"></canvas>
+            </div>
           </div>
           <div class="chart-2">
             <h2>Daily Traffic</h2>

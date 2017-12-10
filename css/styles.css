@@ -511,15 +511,36 @@ nav ul li {
   border-bottom: 1px solid #000; }
 
 .dashboard-line-in input {
-  margin-right: 5px;
-  margin-left: auto;
+  margin: 5px 5px 5px auto;
   background-color: #FFF; }
 
+#magnifier {
+  position: relative;
+  top: 10px;
+  right: 2em; }
+
+@media (min-width: 768px) {
+  .dashboard-line-in input {
+    margin-right: 2em; }
+
+  #magnifier {
+    right: 3.5em; } }
 .chart-1 {
   width: 100%;
   margin: auto;
   display: inline-flex;
   flex-flow: row wrap; }
+
+#tc-hourly,
+#tc-daily,
+#tc-weekly,
+#tc-monthly {
+  width: 100%; }
+
+#tc-hourly,
+#tc-daily,
+#tc-monthly {
+  display: none; }
 
 .chart-2,
 .chart-3 {

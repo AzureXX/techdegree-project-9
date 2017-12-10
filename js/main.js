@@ -16,6 +16,12 @@ var divWeekly = document.querySelector('#tc-weekly');
 var divMonthly = document.querySelector('#tc-monthly');
 var emailNotification = document.querySelector('#emailnotification');
 var publicProfile = document.querySelector('#publicprofile');
+var timeZone = document.querySelector('.select');
+
+// localstorage.getItem(emailNotification.checked);
+// localstorage.getItem(publicProfile.checked);
+// localstorage.setItem(emailNotification.checked);
+// localstorage.setItem(publicProfile.checked);
 
 bell.addEventListener("click", () => {
   bellDot.style.display ="none";
@@ -148,10 +154,6 @@ var myChart = new Chart(monthly,  {
 });
 
 
-
-
-
-
 buttonHourly.addEventListener("click", () => {
   divHourly.style.display = "block";
   divDaily.style.display = "none";
@@ -248,3 +250,12 @@ var mobileUsers = new Chart(ctz, {
         }
     }
 });
+
+
+// emailNotification.addEventListener("click", => {
+//   localstorage.setItem(emailNotification.checked);
+// });
+//
+// publicProfile.addEventListener("click", => {
+//   localstorage.setItem(publicProfile.checked);
+// });

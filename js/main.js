@@ -17,11 +17,8 @@ var divMonthly = document.querySelector('#tc-monthly');
 var emailNotification = document.querySelector('#emailnotification');
 var publicProfile = document.querySelector('#publicprofile');
 var timeZone = document.querySelector('.select');
+var save = document.querySelector('.save');
 
-// localstorage.getItem(emailNotification.checked);
-// localstorage.getItem(publicProfile.checked);
-// localstorage.setItem(emailNotification.checked);
-// localstorage.setItem(publicProfile.checked);
 
 bell.addEventListener("click", () => {
   bellDot.style.display ="none";
@@ -252,10 +249,15 @@ var mobileUsers = new Chart(ctz, {
 });
 
 
-// emailNotification.addEventListener("click", => {
-//   localstorage.setItem(emailNotification.checked);
-// });
-//
-// publicProfile.addEventListener("click", => {
-//   localstorage.setItem(publicProfile.checked);
-// });
+save.addEventListener('click', function () {
+    localStorage.emailValue = emailNotification.checked;
+    localStorage.profileValue = publicProfile.checked;
+    localStorage.selectedOption = timeZone.selectedIndex;
+    localStorage.isSaved = true;
+});
+
+if (localStorage.isSaved) {
+    emailNotification.checked = JSON.parse(localStorage.emailValue);
+    publicProfile.checked = JSON.parse(localStorage.profileValue);
+    timeZone.selectedIndex = JSON.parse(localStorage.selectedOption);
+}
